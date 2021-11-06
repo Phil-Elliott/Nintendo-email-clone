@@ -3,8 +3,50 @@
 <head>
 	<title>Nintendo Email</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+    	/* Desktop */
+    	@media only screen and (min-width: 961px){
+    		.container{
+    			width: 960px;
+    		}
+    		.footer-links {
+    			width: 50% !important;
+    		}
+    		.footer-imgs {
+    			width: 50% !important;
+    		}
+    	}
+    	/* Midsizes */
+    	@media only screen and (max-width: 960px){
+    		.container{
+    			width: 600px;
+    		}
+    		.footer-links {
+    			width: 100%;
+    			padding: 30px 150px 0px !important;
+    		}
+    		.footer-imgs {
+    			width: 100%;
+    		}
+    	}
+    	/* Mobile */
+    	@media only screen and (max-width: 600px){
+    		.container{
+    			width: 100%;
+    		}
+    		.header-tags {
+    			
+    		}
+    		.footer-links {
+    			width: 100%;
+    			padding: 30px 10px 0px !important;
+    		}
+    		.footer-imgs {
+    			width: 100%;
+    		}
+    	}
+    </style>
 </head>
 <body style="background-color: black;">
 	<!-- Start of html email -->
@@ -95,35 +137,29 @@
 					</tr>
 					<!-- End of body-imgs row -->
 					<!-- Start of footer row -->
-					<tr>
+					<tr style="background-color: #e60012;">
 						<td>
-							<table class="footer" width="100%" border="0" cellspacing="0" cellpadding="0" style= "font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; background-color: #e60012;" align="center">
+							<table class="footer-links" width="50%" border="0" cellspacing="0" cellpadding="0" style= "padding: 55px 100px 20px 80px;" align="left">
 								<tr>
-									<td>
-										<table class="footer-links" width="300px" border="0" cellspacing="0" cellpadding="0" style= "padding: 30px 0 20px;" align="center">
-											<tr>
-												<td align="center">
-													<img src="/img/facebook.png" width="38" height="38">
-												</td>
-												<td align="center">
-													<img src="/img/twitter.png" width="36" height="29.5">
-												</td>
-												<td align="center">
-													<img src="/img/youtuber.png" width="46" height="32.5">
-												</td>
-												<td align="center">
-													<img src="/img/instagram.png" width="33" height="33">
-												</td>
-											</tr>
-										</table>
-										<table class="footer-imgs" width="100%" border="0" cellspacing="0" cellpadding="0" style= "padding-bottom: 25px;" align="center">
-											<tr>
-												<td align="center">
-													<img style="padding-right: 5px" src="/img/everyone.jpg" width="253" height="100">
-													<img src="/img/esrb.jpg" width="74" height="101">
-												</td>
-											</tr>
-										</table>
+									<td align="center">
+										<a href="facebook.com"><img src="/img/facebook.png" width="38" height="38"></a>
+									</td>
+									<td align="center">
+										<a href="twitter.com"><img src="/img/twitter.png" width="36" height="29.5"></a>
+									</td>
+									<td align="center">
+										<a href="youtube.com"><img src="/img/youtuber.png" width="46" height="32.5"></a>
+									</td>
+									<td align="center">
+										<a href="instagram.com"><img src="/img/instagram.png" width="33" height="33"></a>
+									</td>
+								</tr>
+							</table>
+							<table class="footer-imgs" width="50%" border="0" cellspacing="0" cellpadding="0" style= "padding: 25px 0;" align="right">
+								<tr>
+									<td align="center">
+										<img style="padding-right: 5px" src="/img/everyone.jpg" width="253" height="100">
+										<img src="/img/esrb.jpg" width="74" height="101">
 									</td>
 								</tr>
 							</table>
